@@ -1,18 +1,16 @@
-# Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "RMK Keyboard"
-product_name = "RMK Keyboard"
+name = "the666"
+product_name = "the666"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "RMK"
-chip = "rp2040"
+board = "pi_pico_w"
 
 [matrix]
 # Row and col pins are mandatory
 row_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
 col_pins = ["PIN_19", "PIN_20", "PIN_21"]
-
-# RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
+# WARNING: Currently row2col/col2row is set in RMK's feature gate, row2col config here is valid ONLY when you're using cloud compilation
 # row2col = true
 
 [layout]
@@ -33,3 +31,6 @@ keymap = [
         ["_", "_", "_"]
     ],
 ]
+
+[ble]
+enabled = true
