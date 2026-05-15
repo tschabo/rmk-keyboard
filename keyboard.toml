@@ -4,7 +4,7 @@ product_name = "the666"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "RMK"
-board = "pi_pico_w"
+board = "pico_w"
 
 [matrix]
 # Row and col pins are mandatory
